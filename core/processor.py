@@ -22,7 +22,14 @@ from core.ffmpeg_runner import FFmpegProcess, get_ffmpeg_path, is_ffmpeg_availab
 from core.logger import get_logger
 from core.models_manager import are_models_installed
 from core.video_info import VideoInfo, probe_video
-from propainter.inference import inpaint_crop_video
+try:
+    from propainter.inference import inpaint_crop_video
+except ModuleNotFoundError:
+    try:
+        import propainter
+        inpaint_crop_video = propainter.inpaint_crop_video
+    except Exception:
+        from inference import inpaint_crop_video
 
 logger = get_logger()
 

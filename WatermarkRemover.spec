@@ -21,6 +21,7 @@ datas = [
     (str(project_root / "NOTICE_PROPAINTER.txt"), "."),
     (str(project_root / "NOTICE_FFMPEG.txt"), "."),
     (str(project_root / "LICENSE"), "."),
+    (str(project_root / "propainter"), "propainter"),
 ]
 
 hiddenimports = [
@@ -41,6 +42,28 @@ hiddenimports = [
     "einops",
     "addict",
     "yaml",
+    "core",
+    "core.config",
+    "core.detection",
+    "core.ffmpeg_runner",
+    "core.logger",
+    "core.models_manager",
+    "core.processor",
+    "core.video_info",
+    "propainter",
+    "propainter.inference",
+    "inference",
+    "model",
+    "model.propainter",
+    "model.recurrent_flow_completion",
+    "RAFT",
+    "RAFT.raft",
+    "ui",
+    "ui.main_window",
+    "ui.preview_widget",
+    "ui.settings_dialog",
+    "ui.models_dialog",
+    "ui.theme",
 ]
 
 a = Analysis(

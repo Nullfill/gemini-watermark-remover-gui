@@ -50,6 +50,13 @@ def sync_assets():
         if src.exists():
             shutil.copy2(src, ffmpeg_dst / f)
 
+    # Ensure propainter package is present in _internal
+    propainter_dst = DIST_DIR / "_internal" / "propainter"
+    if propainter_dst.exists():
+        shutil.rmtree(propainter_dst)
+    shutil.copytree("propainter", propainter_dst)
+    print("  -> Propainter engine synchronized to _internal.")
+
     # Torchvision C-extensions
     try:
         import torchvision

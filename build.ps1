@@ -44,6 +44,10 @@ if (Test-Path "ffmpeg\ffmpeg.exe") {
     Copy-Item "ffmpeg\ffprobe.exe" "$distApp\ffmpeg\" -Force
 }
 
+# Copy propainter package into _internal
+Write-Host "  -> Copying propainter module into _internal..."
+Copy-Item -Path "propainter" -Destination "$distApp\_internal\" -Recurse -Force
+
 # Ensure torchvision C-extensions are copied into _internal
 $tvSrc = python -c "import os, torchvision; print(os.path.dirname(torchvision.__file__))"
 $tvDst = "$distApp\_internal\torchvision"
