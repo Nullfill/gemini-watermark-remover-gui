@@ -1,0 +1,14 @@
+ProPainter License Notice
+========================
+
+This application incorporates inference modules derived from ProPainter (https://github.com/sczhou/ProPainter).
+
+Copyright (c) 2023 S-Lab, Nanyang Technological University, Singapore.
+
+ProPainter is licensed under the S-Lab License 1.0.
+Permission is hereby granted to use, copy, modify, and distribute this software
+for NON-COMMERCIAL research and educational purposes only.
+
+Any commercial use of ProPainter requires explicit permission from S-Lab.
+Pretrained model weights (ProPainter.pth, recurrent_flow_completion.pth, raft-things.pth)
+are provided by the original authors and subject to their respective non-commercial licenses.

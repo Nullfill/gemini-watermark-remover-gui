@@ -1,0 +1,15 @@
+FFmpeg License & Distribution Notice
+====================================
+
+This application bundles or interfaces with FFmpeg and FFprobe binaries.
+FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.
+
+The bundled Windows builds are provided by Gyan.dev (https://www.gyan.dev/ffmpeg/builds/)
+under the GNU General Public License version 3 (GPLv3).
+
+Build Version: FFmpeg 9.0.2-full_build (GPLv3)
+Source Code: https://ffmpeg.org/
+
+Under the terms of the GPLv3, the corresponding source code for FFmpeg is available
+at https://ffmpeg.org/download.html. The use of libx264, libx265, and other GPL libraries
+in the full build designates the combined executable under GPLv3.

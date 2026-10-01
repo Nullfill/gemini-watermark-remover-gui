@@ -1,0 +1,47 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Build and Distribution artifacts
+build/
+dist/
+*.spec.bak
+*.zip
+*.tar.gz
+
+# FFmpeg and Model binaries (downloaded via script / dialog)
+ffmpeg/*.exe
+ffmpeg/*.dll
+models/*.pth
+
+# Scratch, temporary and log directories
+temp/
+logs/
+input/
+output/
+_dewatermark_tmp/
+results/
+tests/scratch/
+
+# Test media and user videos
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.png
+*.jpg
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,3 @@
+"""
+Automated tests package.
+"""
