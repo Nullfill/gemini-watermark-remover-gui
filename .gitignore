@@ -39,6 +39,8 @@ tests/scratch/
 *.avi
 *.png
 *.jpg
+!assets/*.png
+!assets/*.jpg
 
 # Editor and OS files
 .vscode/

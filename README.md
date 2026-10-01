@@ -1,7 +1,10 @@
 # Watermark Remover — Universal Desktop Studio (Windows)
 
 <p align="center">
-  <img src="ui/preview_widget.py" alt="Watermark Remover" width="0" height="0">
+  <img src="assets/screenshot.png" alt="Watermark Remover Desktop Studio" width="850" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+</p>
+
+<p align="center">
   <b>نرم‌افزار حرفه‌ای، مستقل و مدرن ویندوز برای حذف انواع واترمارک، لوگو، آیدی، زیرنویس چسبیده و متن‌های ثابت از روی ویدیوها</b>
   <br>
   با بهره‌گیری از هوش مصنوعی <b>ProPainter (AI Inpainting)</b>، فیلتر سریع <b>Delogo</b> و <b>Crop</b>، حفظ کامل ساختار VFR/PTS و رنگ، بدون نیاز به نصب پایتون و بدون افت کیفیت.
