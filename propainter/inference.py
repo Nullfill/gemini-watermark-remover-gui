@@ -325,13 +325,6 @@ def inpaint_crop_video(
             updated_masks = updated_local_masks.view(b, t, 1, h, w)
             if device.type == 'cuda':
                 torch.cuda.empty_cache()
-        else:
-            b, t, _, _, _ = masks_dilated_t.size()
-            prop_imgs, updated_local_masks = model.img_propagation(masked_frames, pred_flows_bi, masks_dilated_t, 'nearest')
-            updated_frames = frames_t * (1 - masks_dilated_t) + prop_imgs.view(b, t, 3, h, w) * masks_dilated_t
-            updated_masks = updated_local_masks.view(b, t, 1, h, w)
-            if device.type == 'cuda':
-                torch.cuda.empty_cache()
 
         # ---- Step D: Transformer Feature Propagation ----
         check_cancel()
